@@ -45,7 +45,7 @@ body {
   
   /* ヒーローセクション */
   .hero {
-    background-image: url("img/road.png");
+    background-image: url("road.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
