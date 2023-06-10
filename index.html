@@ -9,16 +9,43 @@
 </head>
 
 <body>
-  <header>
+ <header>
     <nav>
       <ul>
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
+  
+  <style>
+    header ul li a {
+      position: relative;
+      display: inline-block;
+      padding-bottom: 5px;
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    header ul li a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+  
+    header ul li a:hover::after {
+      transform: scaleX(1);
+    }
+  </style>
 
   <section id="hero" class="hero">
     <div class="hero-content">
